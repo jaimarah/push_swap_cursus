@@ -1,30 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_utils.c                                         :+:      :+:    :+:   */
+/*   ft_push_utils.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jaimarah <jaimarah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/02 12:31:13 by jaimarah          #+#    #+#             */
-/*   Updated: 2026/01/02 13:03:32 by jaimarah         ###   ########.fr       */
+/*   Created: 2026/01/02 14:37:15 by jaimarah          #+#    #+#             */
+/*   Updated: 2026/01/02 17:20:00 by jaimarah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	ft_isdigit(int c)
+void	pa(t_stack	**a, t_stack **b)
 {
-	return (c >= '0' && c <= '9');
+	t_stack	*tmp;
+
+	if (!b || !*b)
+		return ;
+	tmp = *b;
+	*b = (*b)->next;
+	tmp->next = *a;
+	*a = tmp;
+	write(1, "pa\n", 3);
 }
-int	ft_stack_is_sorted(t_stack *stack)
+
+void	pb(t_stack	**a, t_stack **b)
 {
-	if (!stack || !stack->next)
-		return (1);
-	while (stack && stack->next)
-	{
-		if (stack->value > stack->next->value)
-			return (0);
-		stack = stack->next;
-	}
-	return (1);
+	t_stack	*tmp;
+
+	if (!a || !*a)
+		return ;
+	tmp = *a;
+	*a = (*a)->next;
+	tmp->next = *b;
+	*b = tmp;
+	write(1, "pb\n", 3);
 }

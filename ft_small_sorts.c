@@ -1,30 +1,13 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_utils.c                                         :+:      :+:    :+:   */
+/*   ft_small_sorts.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jaimarah <jaimarah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/11/02 12:31:13 by jaimarah          #+#    #+#             */
-/*   Updated: 2026/01/02 13:03:32 by jaimarah         ###   ########.fr       */
+/*   Created: 2026/01/02 17:57:23 by jaimarah          #+#    #+#             */
+/*   Updated: 2026/01/02 17:57:39 by jaimarah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
-
-int	ft_isdigit(int c)
-{
-	return (c >= '0' && c <= '9');
-}
-int	ft_stack_is_sorted(t_stack *stack)
-{
-	if (!stack || !stack->next)
-		return (1);
-	while (stack && stack->next)
-	{
-		if (stack->value > stack->next->value)
-			return (0);
-		stack = stack->next;
-	}
-	return (1);
-}
