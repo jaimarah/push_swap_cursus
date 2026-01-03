@@ -6,7 +6,7 @@
 /*   By: jaimarah <jaimarah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 16:56:41 by jaimarah          #+#    #+#             */
-/*   Updated: 2026/01/02 17:29:40 by jaimarah         ###   ########.fr       */
+/*   Updated: 2026/01/03 10:41:22 by jaimarah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void	rrb(t_stack **b)
 	write(1, "rrb\n", 4);
 }
 
-void	rrb(t_stack **a, t_stack **b)
+void	rrr(t_stack **a, t_stack **b)
 {
 	ft_reverse_rotate(a);
 	ft_reverse_rotate(b);
