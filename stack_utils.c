@@ -6,7 +6,7 @@
 /*   By: jaimarah <jaimarah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/31 11:48:55 by jaimarah          #+#    #+#             */
-/*   Updated: 2026/01/03 13:47:26 by jaimarah         ###   ########.fr       */
+/*   Updated: 2026/01/03 14:20:19 by jaimarah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,5 +70,5 @@ int	ft_stack_size(t_stack *stack)
 		c++;
 		stack = stack->next;
 	}
-	return (c)
+	return (c);
 }
