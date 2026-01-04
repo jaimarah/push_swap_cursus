@@ -6,7 +6,7 @@
 /*   By: jaimarah <jaimarah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/31 11:38:49 by jaimarah          #+#    #+#             */
-/*   Updated: 2026/01/03 13:47:46 by jaimarah         ###   ########.fr       */
+/*   Updated: 2026/01/04 14:42:20 by jaimarah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,6 +51,16 @@ void	ft_reverse_rotate(t_stack **stack);
 void	rra(t_stack **a);
 void	rrb(t_stack **b);
 void	rrr(t_stack **a, t_stack **b);
+
+void	ft_sort_3(t_stack **a);
+void	ft_sort_4(t_stack **a, t_stack **b);
+void	ft_sort_5(t_stack **a, t_stack **b);
+
+int		ft_chunck_size(int size);
+void	ft_push_chucks(t_stack **a, t_stack **b, int size);
+int		ft_find_max_pos(t_stack *b);
+void	push_back(t_stack **a , t_stack **b);
+void	ft_chunk_sort(t_stack **a, t_stack **b);
 
 
 #endif

@@ -6,7 +6,7 @@
 /*   By: jaimarah <jaimarah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 17:57:23 by jaimarah          #+#    #+#             */
-/*   Updated: 2026/01/03 14:05:07 by jaimarah         ###   ########.fr       */
+/*   Updated: 2026/01/04 14:40:06 by jaimarah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ static int	ft_find_pos(t_stack *a, int index)
 	return (-1);
 }
 
-void ft_sort_3(t_stack **a)
+void	ft_sort_3(t_stack **a)
 {
 	int	i;
 	int	j;
@@ -74,7 +74,7 @@ void	ft_sort_4(t_stack **a, t_stack **b)
 	pa(a, b);
 }
 
-void ft_sort_5(t_stack **a, t_stack **b)
+void	ft_sort_5(t_stack **a, t_stack **b)
 {
 	int	pos;
 
