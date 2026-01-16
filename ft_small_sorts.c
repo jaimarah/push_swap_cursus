@@ -6,7 +6,7 @@
 /*   By: jaimarah <jaimarah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 17:57:23 by jaimarah          #+#    #+#             */
-/*   Updated: 2026/01/16 12:24:22 by jaimarah         ###   ########.fr       */
+/*   Updated: 2026/01/16 16:58:24 by jaimarah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,16 +78,26 @@ void	ft_sort_5(t_stack **a, t_stack **b)
 {
 	int	pos;
 
-	while (ft_stack_size(*a) > 3)
+	pos = ft_find_pos(*a, 0);
+	while (pos != 0)
 	{
-		pos = ft_find_pos(*a, 0);
-		if (pos == 0)
-			pb(a, b);
-		else if (pos <= 2)
+		if (pos <= 2)
 			ra(a);
 		else
 			rra(a);
+		pos = ft_find_pos(*a, 0);
 	}
+	pb(a, b);
+	pos = ft_find_pos(*a, 1);
+	while (pos != 0)
+	{
+		if (pos <= 2)
+			ra(a);
+		else 
+			rra(a);
+		pos = ft_find_pos(*a, 1);
+	}
+	pb(a, b);
 	ft_sort_3(a);
 	pa(a, b);
 	pa(a, b);

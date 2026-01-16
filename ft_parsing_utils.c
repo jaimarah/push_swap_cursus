@@ -6,7 +6,7 @@
 /*   By: jaimarah <jaimarah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/01 11:50:00 by jaimarah          #+#    #+#             */
-/*   Updated: 2026/01/01 16:32:19 by jaimarah         ###   ########.fr       */
+/*   Updated: 2026/01/16 20:02:30 by jaimarah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,28 +49,33 @@ int ft_is_empty(char *s)
 long	ft_atol(char *str)
 {
 	long	res;
+	long	prev;
 	int		sign;
 	int		i;
 
 	res = 0;
 	sign = 1;
 	i = 0;
-
 	if (str[i] == '-' || str[i] == '+')
 	{
-		if (str[i] == '-')
+		if (str[i++] == '-')
 			sign = -1;
-		i++;
 	}
 	while (str[i])
 	{
-		res = res * 10 + (str[i] - '0');
-		i++;
+		prev = res;
+		res = res * 10 + (str[i++] - '0');
+		if (res / 10 != prev)
+		{
+			if (sign == 1)
+				return (9223372036854775807L);
+			return (-9223372036854775807L - 1);
+		}
 	}
 	return (res * sign);
 }
 
-long	ft_check_int(long n)
+int	ft_check_int(long n)
 {
 	if (n < -2147483648L || n > 2147483647L)
 		return (0);

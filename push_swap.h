@@ -6,7 +6,7 @@
 /*   By: jaimarah <jaimarah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/31 11:38:49 by jaimarah          #+#    #+#             */
-/*   Updated: 2026/01/16 15:41:00 by jaimarah         ###   ########.fr       */
+/*   Updated: 2026/01/16 19:57:44 by jaimarah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,7 +43,7 @@ t_stack	*ft_get_max(t_stack *stack);
 int		ft_is_num(char *s);
 int 	ft_is_empty(char *s);
 long	ft_atol(char *str);
-long	ft_check_int(long n);
+int	ft_check_int(long n);
 int		ft_duplicates(t_stack *stack);
 void	ft_error(t_stack *stack);
 t_stack	*ft_build_stack(int argc, char **argv);
