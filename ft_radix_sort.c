@@ -6,7 +6,7 @@
 /*   By: jaimarah <jaimarah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 11:27:37 by jaimarah          #+#    #+#             */
-/*   Updated: 2026/01/16 12:06:20 by jaimarah         ###   ########.fr       */
+/*   Updated: 2026/01/16 16:09:20 by jaimarah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,13 +26,15 @@ void	ft_radix_sort(t_stack **a, t_stack **b)
 		size = ft_stack_size(*a);
 		i = 0;
 		while (i < size)
+		{
 			if ((((*a)->index >> bit) & 1) == 0)
 				pb(a, b);
 			else
 				ra(a);
 			i++;
+		}
+		while (*b)
+			pa(a, b);
+		bit++;
 	}
-	while (b)
-		pa(a, b);
-	bit++;
 }
