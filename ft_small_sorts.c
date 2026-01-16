@@ -6,13 +6,13 @@
 /*   By: jaimarah <jaimarah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 17:57:23 by jaimarah          #+#    #+#             */
-/*   Updated: 2026/01/04 14:40:06 by jaimarah         ###   ########.fr       */
+/*   Updated: 2026/01/16 12:24:22 by jaimarah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-static int	ft_find_pos(t_stack *a, int index)
+int	ft_find_pos(t_stack *a, int index)
 {
 	int pos;
 

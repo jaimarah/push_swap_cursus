@@ -1,22 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_chunk_sort.c                                    :+:      :+:    :+:   */
+/*   ft_small_sorts2.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jaimarah <jaimarah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/04 14:40:29 by jaimarah          #+#    #+#             */
-/*   Updated: 2026/01/04 14:42:11 by jaimarah         ###   ########.fr       */
+/*   Created: 2026/01/16 11:58:35 by jaimarah          #+#    #+#             */
+/*   Updated: 2026/01/16 12:03:15 by jaimarah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-void	ft_chunk_sort(t_stack **a, t_stack **b)
+void	ft_sort_2(t_stack **a)
 {
-	int	size;
-
-	size = ft_stack_size(*a);
-	ft_push_chucks(a, b, size);
-	push_back(a, b);
+	if ((*a)->index > (*a)->next->index)
+	sa(a);
 }

@@ -6,7 +6,7 @@
 /*   By: jaimarah <jaimarah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/02 12:31:13 by jaimarah          #+#    #+#             */
-/*   Updated: 2026/01/02 13:03:32 by jaimarah         ###   ########.fr       */
+/*   Updated: 2026/01/16 15:13:41 by jaimarah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,31 @@ int	ft_stack_is_sorted(t_stack *stack)
 		stack = stack->next;
 	}
 	return (1);
+}
+
+size_t	ft_strlen(const char *s)
+{
+	size_t	i;
+
+	i = 0;
+	while (s[i])
+		i++;
+	return (i);
+}
+
+char	*ft_substr(char const *s, unsigned int start, size_t len)
+{
+	char	*str;
+
+	if (!s)
+		return (NULL);
+	if (start > ft_strlen(s))
+		return (ft_strdup(""));
+	if (len > ft_strlen(s + start))
+		len = ft_strlen(s + start);
+	str = malloc(len + 1);
+	if (!str)
+		return (NULL);
+	ft_strlcpy(str, &s[start], len + 1);
+	return (str);
 }

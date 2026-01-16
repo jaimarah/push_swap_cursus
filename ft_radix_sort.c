@@ -1,42 +1,38 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_parsing_utils2.c                                :+:      :+:    :+:   */
+/*   ft_radix_sort.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jaimarah <jaimarah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/01 15:10:25 by jaimarah          #+#    #+#             */
-/*   Updated: 2026/01/16 15:09:49 by jaimarah         ###   ########.fr       */
+/*   Created: 2026/01/16 11:27:37 by jaimarah          #+#    #+#             */
+/*   Updated: 2026/01/16 12:06:20 by jaimarah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "push_swap.h"
 
-int	ft_duplicates(t_stack *stack)
+void	ft_radix_sort(t_stack **a, t_stack **b)
 {
-	t_stack	*node;
-	t_stack	*next_node;
+	int	max_bits;
+	int	size;
+	int	bit;
+	int	i;
 
-	if(!stack)
-		return (1);
-	node = stack;
-	while (node)
+	max_bits = ft_get_max_bits(*a);
+	bit = 0;
+	while (bit < max_bits)
 	{
-		next_node = node->next;
-		while(next_node)
-		{
-			if (node->value == next_node->value)
-				return(0);
-			next_node = next_node->next;
-		}
-		node = node->next;
+		size = ft_stack_size(*a);
+		i = 0;
+		while (i < size)
+			if ((((*a)->index >> bit) & 1) == 0)
+				pb(a, b);
+			else
+				ra(a);
+			i++;
 	}
-	return (1);
-}
-
-void	ft_error(t_stack *stack)
-{
-	ft_free_stack(stack);
-	write(2, "Error\n", 6);
-	exit(EXIT_FAILURE);
+	while (b)
+		pa(a, b);
+	bit++;
 }
