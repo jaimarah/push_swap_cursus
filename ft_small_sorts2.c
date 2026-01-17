@@ -6,7 +6,7 @@
 /*   By: jaimarah <jaimarah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 11:58:35 by jaimarah          #+#    #+#             */
-/*   Updated: 2026/01/16 12:03:15 by jaimarah         ###   ########.fr       */
+/*   Updated: 2026/01/17 10:59:31 by jaimarah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,5 +15,5 @@
 void	ft_sort_2(t_stack **a)
 {
 	if ((*a)->index > (*a)->next->index)
-	sa(a);
+		sa(a);
 }

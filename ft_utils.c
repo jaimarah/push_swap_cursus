@@ -6,7 +6,7 @@
 /*   By: jaimarah <jaimarah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/02 12:31:13 by jaimarah          #+#    #+#             */
-/*   Updated: 2026/01/16 15:13:41 by jaimarah         ###   ########.fr       */
+/*   Updated: 2026/01/17 11:01:25 by jaimarah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@ int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');
 }
+
 int	ft_stack_is_sorted(t_stack *stack)
 {
 	if (!stack || !stack->next)

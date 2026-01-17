@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_stack_utils2.c                                  :+:      :+:    :+:   */
+/*   ft_indexing.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jaimarah <jaimarah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/16 10:37:28 by jaimarah          #+#    #+#             */
-/*   Updated: 2026/01/16 10:53:58 by jaimarah         ###   ########.fr       */
+/*   Updated: 2026/01/17 10:55:04 by jaimarah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,7 +52,7 @@ void	ft_assign_index(t_stack *stack)
 t_stack	*ft_get_min(t_stack *stack)
 {
 	t_stack	*min;
-	
+
 	if (!stack)
 		return (NULL);
 	min = stack;

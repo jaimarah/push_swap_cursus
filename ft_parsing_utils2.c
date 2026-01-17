@@ -6,7 +6,7 @@
 /*   By: jaimarah <jaimarah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/01 15:10:25 by jaimarah          #+#    #+#             */
-/*   Updated: 2026/01/16 15:09:49 by jaimarah         ###   ########.fr       */
+/*   Updated: 2026/01/17 10:55:51 by jaimarah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,16 +17,16 @@ int	ft_duplicates(t_stack *stack)
 	t_stack	*node;
 	t_stack	*next_node;
 
-	if(!stack)
+	if (!stack)
 		return (1);
 	node = stack;
 	while (node)
 	{
 		next_node = node->next;
-		while(next_node)
+		while (next_node)
 		{
 			if (node->value == next_node->value)
-				return(0);
+				return (0);
 			next_node = next_node->next;
 		}
 		node = node->next;

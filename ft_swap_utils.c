@@ -6,7 +6,7 @@
 /*   By: jaimarah <jaimarah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 13:05:40 by jaimarah          #+#    #+#             */
-/*   Updated: 2026/01/02 13:26:13 by jaimarah         ###   ########.fr       */
+/*   Updated: 2026/01/17 11:00:59 by jaimarah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	sa(t_stack **a)
 {
-	t_stack *tmp;
+	t_stack	*tmp;
 
 	if (!a || !*a || !(*a)->next)
 		return ;
@@ -27,7 +27,7 @@ void	sa(t_stack **a)
 
 void	sb(t_stack **b)
 {
-	t_stack *tmp;
+	t_stack	*tmp;
 
 	if (!b || !*b || !(*b)->next)
 		return ;

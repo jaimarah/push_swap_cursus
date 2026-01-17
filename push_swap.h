@@ -6,7 +6,7 @@
 /*   By: jaimarah <jaimarah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/31 11:38:49 by jaimarah          #+#    #+#             */
-/*   Updated: 2026/01/16 19:57:44 by jaimarah         ###   ########.fr       */
+/*   Updated: 2026/01/17 11:05:20 by jaimarah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,10 +18,10 @@
 
 typedef struct s_stack
 {
-    int             value;
-    int             index;
-    struct s_stack  *next;
-} t_stack;
+	int					value;
+	int					index;
+	struct s_stack		*next;
+}	t_stack;
 
 int		ft_isdigit(int c);
 int		ft_atoi(const char *str);
@@ -32,7 +32,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 char	*ft_strdup(const char *s1);
 
 t_stack	*ft_stack_new(int value);
-void    ft_stack_add_back(t_stack **stack, t_stack *new);
+void	ft_stack_add_back(t_stack **stack, t_stack *new);
 void	ft_free_stack(t_stack *stack);
 int		ft_stack_size(t_stack *stack);
 int		ft_get_max_bits(t_stack *stack);
@@ -41,9 +41,9 @@ t_stack	*ft_get_min(t_stack *stack);
 t_stack	*ft_get_max(t_stack *stack);
 
 int		ft_is_num(char *s);
-int 	ft_is_empty(char *s);
+int		ft_is_empty(char *s);
 long	ft_atol(char *str);
-int	ft_check_int(long n);
+int		ft_check_int(long n);
 int		ft_duplicates(t_stack *stack);
 void	ft_error(t_stack *stack);
 t_stack	*ft_build_stack(int argc, char **argv);
@@ -73,6 +73,5 @@ void	ft_sort_4(t_stack **a, t_stack **b);
 void	ft_sort_5(t_stack **a, t_stack **b);
 
 void	ft_radix_sort(t_stack **a, t_stack **b);
-
 
 #endif

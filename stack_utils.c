@@ -6,7 +6,7 @@
 /*   By: jaimarah <jaimarah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/31 11:48:55 by jaimarah          #+#    #+#             */
-/*   Updated: 2026/01/04 09:47:45 by jaimarah         ###   ########.fr       */
+/*   Updated: 2026/01/17 11:06:18 by jaimarah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,11 +23,10 @@ t_stack	*ft_stack_new(int value)
 	node->value = value;
 	node->index = -1;
 	node->next = NULL;
-
 	return (node);
 }
 
-void    ft_stack_add_back(t_stack **stack, t_stack *new)
+void	ft_stack_add_back(t_stack **stack, t_stack *new)
 {
 	t_stack	*node;
 
@@ -50,7 +49,7 @@ void	ft_free_stack(t_stack *stack)
 {
 	t_stack	*tmp;
 
-	if(!stack)
+	if (!stack)
 		return ;
 	while (stack)
 	{

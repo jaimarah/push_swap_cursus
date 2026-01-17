@@ -6,7 +6,7 @@
 /*   By: jaimarah <jaimarah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/02 17:57:23 by jaimarah          #+#    #+#             */
-/*   Updated: 2026/01/16 16:58:24 by jaimarah         ###   ########.fr       */
+/*   Updated: 2026/01/17 10:59:08 by jaimarah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 int	ft_find_pos(t_stack *a, int index)
 {
-	int pos;
+	int	pos;
 
 	pos = 0;
-	while(a)
+	while (a)
 	{
 		if (a->index == index)
 			return (pos);
@@ -36,7 +36,6 @@ void	ft_sort_3(t_stack **a)
 	i = (*a)->index;
 	j = (*a)->next->index;
 	k = (*a)->next->next->index;
-
 	if (i > j && j < k && i < k)
 		sa(a);
 	else if (i > j && j > k)
@@ -57,7 +56,7 @@ void	ft_sort_3(t_stack **a)
 
 void	ft_sort_4(t_stack **a, t_stack **b)
 {
-	int pos;
+	int	pos;
 
 	pos = ft_find_pos(*a, 0);
 	if (pos == 1)
@@ -69,7 +68,7 @@ void	ft_sort_4(t_stack **a, t_stack **b)
 	}
 	else if (pos == 3)
 		rra(a);
-	pb(a , b);
+	pb(a, b);
 	ft_sort_3(a);
 	pa(a, b);
 }
@@ -93,7 +92,7 @@ void	ft_sort_5(t_stack **a, t_stack **b)
 	{
 		if (pos <= 2)
 			ra(a);
-		else 
+		else
 			rra(a);
 		pos = ft_find_pos(*a, 1);
 	}

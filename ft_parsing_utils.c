@@ -6,7 +6,7 @@
 /*   By: jaimarah <jaimarah@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/01 11:50:00 by jaimarah          #+#    #+#             */
-/*   Updated: 2026/01/16 20:02:30 by jaimarah         ###   ########.fr       */
+/*   Updated: 2026/01/17 10:55:27 by jaimarah         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_is_num(char *s)
 {
 	int	i;
-	
+
 	i = 0;
 	if (!s || !*s)
 		return (0);
@@ -32,7 +32,7 @@ int	ft_is_num(char *s)
 	return (1);
 }
 
-int ft_is_empty(char *s)
+int	ft_is_empty(char *s)
 {
 	int	i;
 
