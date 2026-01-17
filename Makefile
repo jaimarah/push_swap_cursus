@@ -6,7 +6,7 @@
 #    By: jaimarah <jaimarah@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/01/16 12:25:35 by jaimarah          #+#    #+#              #
-#    Updated: 2026/01/16 15:42:46 by jaimarah         ###   ########.fr        #
+#    Updated: 2026/01/17 11:33:46 by jaimarah         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,7 +16,6 @@ CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
 SRCS = push_swap.c \
-       ft_atoi.c \
        ft_indexing.c \
        ft_parsing.c \
        ft_parsing_utils.c \
